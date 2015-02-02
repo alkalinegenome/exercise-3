@@ -36,7 +36,7 @@ header {
 
 .navigation ul {
 	@include zero;
-	margin-top: 2rem;
+	margin-top: 2.75rem;
 	li {
 		list-style-type: none;
 		a {
@@ -73,11 +73,16 @@ header {
 	color: $text-color;
 	height: 40px;
 	width: 40px;
+	:hover {
+			@include ease(all, 300ms, ease-in-out);
+			background-color: #4682B4;
+			}			
 	i{
 		border: 1px solid $light-grey;
 		padding: .5em;
 		color: #fff;
 		background-color: #666;
+
 	}
 	span {
 		@include hide-text;
@@ -130,5 +135,16 @@ header {
 	.slide-menu {
 		position: static;
 		right: auto;
+	}
+	.navigation ul li {
+		display: inline-block;
+		width: 25%;
+		margin: 0;
+		a {
+			border: none;	
+		}
+		a:first-child {
+				border-top: none;
+		}
 	}
 }
