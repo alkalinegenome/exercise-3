@@ -136,15 +136,21 @@ header {
 		position: static;
 		right: auto;
 	}
-	.navigation ul li {
-		display: inline-block;
-		width: 25%;
-		margin: 0;
-		a {
-			border: none;	
-		}
-		a:first-child {
-				border-top: none;
+	.navigation ul {
+		font-size: 0;
+		li {
+			font-size: 1rem;
+			display: inline-block;
+			width: 25%;
+			margin: 0;
+			a {
+				border: none;
+				background-color: #FFF;
+			}
+			a:first-child {
+					border-top: none;
+					border-left: none;
+			}
 		}
 	}
 }
