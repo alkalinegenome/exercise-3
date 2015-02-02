@@ -20,7 +20,7 @@ html {
 
 body{
 	font-family: 'Roboto', sans-serif;
-	background-color: #F5F5F5;
+	background-color: $white;
 	@include zero;
 	// Hides close button if there is no js
 	&.noscript .close-btn,
@@ -44,24 +44,25 @@ header {
 			display: block;
 			padding: 1.25em 1em;
 			text-align: center;
-			border-bottom: 1px solid $light-grey;
+			border-bottom: .125em dotted $light-grey;
 			text-decoration: none;
-			@include ease(all, 300ms, ease)
-		}
-		&:first-child a{
-			border-top: 1px solid $light-grey;
-		}
-		a:hover {
-			color: #708090;
-			background-color: #ADD8E6;
-		}
-		a:focus {
-			outline: none;
-			background-color: #708090;
-			color: #f5f5f5;
-		}
-		:visited {
-			color: #708090;
+			@include ease(all, 300ms, ease);
+			&:first-child a{
+				border-top: 1px solid $light-grey;
+			}
+			&:hover {
+				color: $slate;
+				background-color: #ADD8E6;
+				border-bottom: .125em dotted $light-grey;
+			}
+			&:focus, &:active {
+				outline: none;
+				background-color: $slate;
+				color: $white;
+			}
+			&:visited {
+				color: $slate;
+			}
 		}
 	}
 }
@@ -74,7 +75,7 @@ header {
 	color: $text-color;
 	height: 40px;
 	width: 40px;
-	:hover {
+	&:hover {
 			@include ease(all, 300ms, ease-in-out);
 			background-color: #4682B4;
 			}			
@@ -144,7 +145,7 @@ header {
 			display: inline-block;
 			width: 25%;
 			margin: 0;
-			border-left: 2px solid #F5f5f5;	
+			border-left: 2px solid $white;	
 			vertical-align: top;
 			&:first-child {
 				border-left: none;
@@ -152,16 +153,20 @@ header {
 			a {
 				border: none;
 				background-color: #FFF;
-			&:hover {
-				color: #f5f5f5;
-				text-shadow: 1px 1px #708090;
+				&:hover, &:focus {
+				color: $white;
+				text-shadow: 1px 1px $slate;
 				font-size: 1.25rem;
 				padding: 1.25rem;
-				border-bottom: 3px solid #708090
-			}
-			&:first-child {
+				border-bottom: 3px solid $slate;
+				&:active, &:focus {
+					color: $white;
+					border-bottom: 3px solid $light-grey;
+				}
+				&:first-child {
 					border-top: none;
 					border-left: none;
+				}
 			}
 			}
 		}
