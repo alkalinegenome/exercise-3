@@ -60,13 +60,15 @@ header {
 .close-btn {
 	position: absolute;
 	right: 1em;
-	top: 0;
+	top: 0.5rem;
 	color: $text-color;
 	height: 40px;
 	width: 40px;
 	i{
 		border: 1px solid $light-grey;
 		padding: .5em;
+		color: #fff;
+		background-color: #666;
 	}
 	span {
 		@include hide-text;
