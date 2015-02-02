@@ -51,13 +51,12 @@ header {
 			border-top: 1px solid $light-grey;
 		}
 		a:hover {
-			color: #F08080;
-			background-color: #708090;
+			color: #708090;
+			background-color: #ADD8E6;
 		}
 		a:focus {
 			outline: none;
-			border: 2px solid #CD5C5C;
-			background-color: #fA8072;
+			background-color: #708090;
 			color: #f5f5f5;
 		}
 		:visited {
