@@ -45,12 +45,14 @@ header {
 			text-align: center;
 			border-bottom: 1px solid $light-grey;
 			text-decoration: none;
+			@include ease(all, 300ms, ease)
 		}
 		&:first-child a{
 			border-top: 1px solid $light-grey;
 		}
-		a:hover, a:focus {
+		a:hover {
 			color: #F08080;
+			background-color: #708090;
 		}
 		a:focus {
 			outline: none;
