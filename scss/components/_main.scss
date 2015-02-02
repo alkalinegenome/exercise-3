@@ -19,13 +19,13 @@ html {
 
 
 body{
-  font-family: 'Roboto', sans-serif;
-  background-color: #F5F5F5;
-  @include zero;
-  // Hides close button if there is no js
-  &.noscript .close-btn,
-  &.noscript .toggle-btn{
-    display: none;
+	font-family: 'Roboto', sans-serif;
+	background-color: #F5F5F5;
+	@include zero;
+	// Hides close button if there is no js
+	&.noscript .close-btn,
+	&.noscript .toggle-btn{
+	display: none;
   }
 }
 
