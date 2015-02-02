@@ -145,16 +145,23 @@ header {
 			width: 25%;
 			margin: 0;
 			border-left: 2px solid #F5f5f5;	
+			vertical-align: top;
 			&:first-child {
 				border-left: none;
 			}
 			a {
 				border: none;
 				background-color: #FFF;
+			&:hover {
+				color: #f5f5f5;
+				text-shadow: 1px 1px #708090;
+				font-size: 1.25rem;
+				padding: 1.25rem;
 			}
-			a:first-child {
+			&:first-child {
 					border-top: none;
 					border-left: none;
+			}
 			}
 		}
 	}
